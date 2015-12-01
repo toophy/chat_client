@@ -1,0 +1,18 @@
+
+-- 引用文件
+include chat_proto_stream github.com/toophy/toogo
+
+-- 登录聊天服务器
+id 1
+message C2M_login {
+	Account string	帐号
+	Time	int32	登录时间戳
+	Sign 	string  验证码
+}
+
+-- 服务器响应登录
+id 2
+message M2C_login_ret {
+	Ret     int8    登录结果,0:成功,其他为失败原因
+	Msg     string  登录失败描述
+}
