@@ -1,23 +1,225 @@
-14:04:25 [D] 1           服务器{chat_client}启动14:04:25 [I] 0 msg=connect ok,name=client1,session=0,info=
-14:04:27 [W] 8359 Net packet header : 0 != 4
-
-14:04:27 [I] 0 msg=read failed,name=client1,session=0,info=read tcp 127.0.0.1:62857->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.
-14:04:27 [I] 0 msg=pre close,name=client1,session=0,info=
-14:04:27 [I] 0 msg=close ok,name=client1,session=0,info=
-14:04:27 [I] 0 msg=pre close,name=client1,session=0,info=
-14:04:27 [I] 0 msg=close failed,name=client1,session=0,info=close tcp 127.0.0.1:62857->127.0.0.1:9998: use of closed network connection
-17:28:14 [D] 1           服务器{chat_client}启动17:28:14 [D] 1 msg=connect ok,name=client1,session=0,info=17:31:03 [W] 6194 Net packet header : 0 != 4
-
-17:31:04 [D] 1 msg=read failed,name=client1,session=0,info=read tcp 127.0.0.1:45180->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.17:31:04 [D] 1 msg=pre close,name=client1,session=0,info=17:31:04 [D] 1 msg=pre close,name=client1,session=0,info=17:31:04 [D] 1 msg=close failed,name=client1,session=0,info=close tcp 127.0.0.1:45180->127.0.0.1:9998: use of closed network connection17:31:04 [D] 1 msg=close ok,name=client1,session=0,info=17:31:57 [D] 1           服务器{chat_client}启动
-17:31:57 [D] 1 msg=connect ok,name=client1,session=0,info=
-17:32:06 [D] 1           服务器{chat_client}启动
-17:32:06 [D] 1 msg=connect ok,name=client1,session=0,info=
-17:40:03 [D] 1           服务器{chat_client}启动
-17:40:03 [D] 1 msg=connect ok,name=client1,session=0,info=
-17:41:21 [D] 1           服务器{chat_client}启动
-17:42:07 [D] 1           服务器{chat_client}启动
-17:43:25 [D] 1           服务器{chat_client}启动
-17:43:25 [D] 1 msg=connect ok,name=client1,session=0,info=
-17:44:17 [D] 1           服务器{chat_client}启动
-17:48:07 [D] 1           服务器{chat_client}启动
-17:48:07 [D] 1 msg=connect ok,name=client1,session=0,info=
+13:51:56 [D] 1           服务器{chat_client}启动
+13:51:56 [D] 1 client1 : Connect ok
+14:17:12 [W] 3035 Net packet header : 0 != 4
+14:17:12 [E] 1 client1 : Connect read[read tcp 127.0.0.1:10533->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:17:12 [D] 1 client1 : Connect pre close
+14:17:12 [D] 1 client1 : Connect close ok.
+14:17:12 [D] 1 client1 : Connect pre close
+14:17:12 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:10533->127.0.0.1:9998: use of closed network connection]
+14:17:22 [D] 1           服务器{chat_client}启动
+14:17:22 [D] 1 client1 : Connect ok
+14:17:57 [D] 1           服务器{chat_client}启动
+14:17:57 [D] 1 client1 : Connect ok
+14:18:31 [D] 1           服务器{chat_client}启动
+14:18:31 [D] 1 client1 : Connect ok
+14:18:31 [I] 1 rini
+14:32:51 [D] 1           服务器{chat_client}启动
+14:32:51 [D] 1 client1 : Connect ok
+14:32:51 [I] 1 rini
+14:33:34 [D] 1           服务器{chat_client}启动
+14:38:24 [D] 1           服务器{chat_client}启动
+14:39:58 [D] 1           服务器{chat_client}启动
+14:40:54 [D] 1           服务器{chat_client}启动
+14:40:54 [D] 1 client1 : Connect ok
+15:08:48 [D] 1           服务器{chat_client}启动
+15:08:48 [D] 1 client1 : Connect ok
+15:11:10 [W] 6210 Net packet header : 0 != 4
+15:11:10 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14190->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:11:10 [D] 1 client1 : Connect pre close
+15:11:10 [D] 1 client1 : Connect pre close
+15:11:10 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14190->127.0.0.1:9998: use of closed network connection]
+15:11:10 [D] 1 client1 : Connect close ok.
+15:12:00 [D] 1           服务器{chat_client}启动
+15:12:01 [D] 1 client1 : Connect ok
+15:12:43 [W] 3007 Net packet header : 0 != 4
+15:12:43 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14344->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:12:43 [D] 1 client1 : Connect pre close
+15:12:43 [D] 1 client1 : Connect close ok.
+15:12:43 [D] 1 client1 : Connect pre close
+15:12:43 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14344->127.0.0.1:9998: use of closed network connection]
+15:12:53 [D] 1           服务器{chat_client}启动
+15:12:53 [D] 1 client1 : Connect ok
+15:13:49 [D] 1           服务器{chat_client}启动
+15:13:49 [D] 1 client1 : Connect ok
+15:14:19 [D] 1           服务器{chat_client}启动
+15:14:19 [D] 1 client1 : Connect ok
+15:15:26 [W] 1664 Net packet header : 0 != 4
+15:15:26 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14474->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:15:26 [D] 1 client1 : Connect pre close
+15:15:26 [D] 1 client1 : Connect pre close
+15:15:26 [D] 1 client1 : Connect close ok.
+15:15:26 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14474->127.0.0.1:9998: use of closed network connection]
+15:15:36 [D] 1           服务器{chat_client}启动
+15:15:36 [D] 1 client1 : Connect ok
+15:16:15 [D] 1           服务器{chat_client}启动
+15:16:16 [D] 1 client1 : Connect ok
+15:16:58 [W] 2137 Net packet header : 0 != 4
+15:16:58 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14584->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:16:58 [D] 1 client1 : Connect pre close
+15:16:58 [D] 1 client1 : Connect close ok.
+15:16:58 [D] 1 client1 : Connect pre close
+15:16:58 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14584->127.0.0.1:9998: use of closed network connection]
+15:17:09 [D] 1           服务器{chat_client}启动
+15:17:09 [D] 1 client1 : Connect ok
+15:18:13 [W] 2509 Net packet header : 0 != 4
+15:18:13 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14646->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:18:13 [D] 1 client1 : Connect pre close
+15:18:13 [D] 1 client1 : Connect close ok.
+15:18:13 [D] 1 client1 : Connect pre close
+15:18:13 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14646->127.0.0.1:9998: use of closed network connection]
+15:18:22 [D] 1           服务器{chat_client}启动
+15:18:22 [D] 1 client1 : Connect ok
+15:33:49 [W] 1609 Net packet header : 0 != 4
+15:33:49 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14727->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:33:49 [D] 1 client1 : Connect pre close
+15:33:49 [D] 1 client1 : Connect close ok.
+15:33:49 [D] 1 client1 : Connect pre close
+15:33:49 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14727->127.0.0.1:9998: use of closed network connection]
+15:35:39 [D] 1           服务器{chat_client}启动
+15:35:39 [D] 1 client1 : Connect ok
+15:36:46 [W] 1136 Net packet header : 0 != 4
+15:36:46 [E] 1 client1 : Connect read[read tcp 127.0.0.1:15545->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:36:46 [D] 1 client1 : Connect pre close
+15:36:46 [D] 1 client1 : Connect close ok.
+15:36:46 [D] 1 client1 : Connect pre close
+15:36:46 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:15545->127.0.0.1:9998: use of closed network connection]
+15:36:53 [D] 1           服务器{chat_client}启动
+15:36:53 [D] 1 client1 : Connect ok
+15:38:10 [W] 1030 Net packet header : 0 != 4
+15:38:10 [E] 1 client1 : Connect read[read tcp 127.0.0.1:15622->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:38:10 [D] 1 client1 : Connect pre close
+15:38:10 [D] 1 client1 : Connect close ok.
+15:38:10 [D] 1 client1 : Connect pre close
+15:38:10 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:15622->127.0.0.1:9998: use of closed network connection]
+15:39:18 [D] 1           服务器{chat_client}启动
+15:39:18 [D] 1 client1 : Connect ok
+15:41:55 [W] 3854 Net packet header : 0 != 4
+15:41:55 [E] 1 client1 : Connect read[read tcp 127.0.0.1:15799->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:41:55 [D] 1 client1 : Connect pre close
+15:41:55 [D] 1 client1 : Connect close ok.
+15:41:55 [D] 1 client1 : Connect pre close
+15:41:55 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:15799->127.0.0.1:9998: use of closed network connection]
+15:42:35 [D] 1           服务器{chat_client}启动
+15:42:36 [D] 1 client1 : Connect ok
+15:42:44 [W] 2921 Net packet header : 0 != 4
+15:42:44 [E] 1 client1 : Connect read[read tcp 127.0.0.1:16056->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:42:44 [D] 1 client1 : Connect pre close
+15:42:44 [D] 1 client1 : Connect close ok.
+15:42:44 [D] 1 client1 : Connect pre close
+15:42:44 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:16056->127.0.0.1:9998: use of closed network connection]
+15:44:48 [D] 1           服务器{chat_client}启动
+15:44:48 [D] 1 client1 : Connect ok
+15:48:24 [W] 1236 Net packet header : 0 != 4
+15:48:24 [E] 1 client1 : Connect read[read tcp 127.0.0.1:16235->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:48:24 [D] 1 client1 : Connect pre close
+15:48:24 [D] 1 client1 : Connect close ok.
+15:48:24 [D] 1 client1 : Connect pre close
+15:48:24 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:16235->127.0.0.1:9998: use of closed network connection]
+15:48:34 [D] 1           服务器{chat_client}启动
+15:48:34 [D] 1 client1 : Connect ok
+15:50:36 [W] 8436 Net packet header : 0 != 4
+15:50:36 [E] 1 client1 : Connect read[read tcp 127.0.0.1:16500->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:50:36 [D] 1 client1 : Connect pre close
+15:50:36 [D] 1 client1 : Connect pre close
+15:50:36 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:16500->127.0.0.1:9998: use of closed network connection]
+15:50:36 [D] 1 client1 : Connect close ok.
+15:50:44 [D] 1           服务器{chat_client}启动
+15:50:44 [D] 1 client1 : Connect ok
+15:51:58 [W] 288 Net packet header : 0 != 4
+15:51:58 [E] 1 client1 : Connect read[read tcp 127.0.0.1:16660->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:51:58 [D] 1 client1 : Connect pre close
+15:51:58 [D] 1 client1 : Connect pre close
+15:51:58 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:16660->127.0.0.1:9998: use of closed network connection]
+15:51:58 [D] 1 client1 : Connect close ok.
+15:52:06 [D] 1           服务器{chat_client}启动
+15:52:06 [D] 1 client1 : Connect ok
+15:53:24 [D] 1           服务器{chat_client}启动
+15:53:24 [D] 1 client1 : Connect ok
+15:53:48 [D] 1           服务器{chat_client}启动
+15:53:48 [D] 1 client1 : Connect ok
+16:08:28 [W] 7959 Net packet header : 0 != 4
+16:08:28 [E] 1 client1 : Connect read[read tcp 127.0.0.1:16925->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:08:28 [D] 1 client1 : Connect pre close
+16:08:28 [D] 1 client1 : Connect pre close
+16:08:28 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:16925->127.0.0.1:9998: use of closed network connection]
+16:08:28 [D] 1 client1 : Connect close ok.
+16:08:39 [D] 1           服务器{chat_client}启动
+16:08:39 [D] 1 client1 : Connect ok
+16:13:45 [D] 1           服务器{chat_client}启动
+16:13:45 [D] 1 client1 : Connect ok
+16:14:50 [W] 1544 Net packet header : 0 != 4
+16:14:50 [E] 1 client1 : Connect read[read tcp 127.0.0.1:18313->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:14:50 [D] 1 client1 : Connect pre close
+16:14:50 [D] 1 client1 : Connect close ok.
+16:14:50 [D] 1 client1 : Connect pre close
+16:14:50 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:18313->127.0.0.1:9998: use of closed network connection]
+16:14:59 [D] 1           服务器{chat_client}启动
+16:14:59 [D] 1 client1 : Connect ok
+16:25:55 [W] 1945 Net packet header : 0 != 4
+16:25:56 [E] 1 client1 : Connect read[read tcp 127.0.0.1:18408->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:25:56 [D] 1 client1 : Connect pre close
+16:25:56 [D] 1 client1 : Connect close ok.
+16:25:56 [D] 1 client1 : Connect pre close
+16:25:56 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:18408->127.0.0.1:9998: use of closed network connection]
+16:26:04 [D] 1           服务器{chat_client}启动
+16:26:04 [D] 1 client1 : Connect ok
+16:33:32 [W] 4687 Net packet header : 0 != 4
+16:33:32 [E] 1 client1 : Connect read[read tcp 127.0.0.1:19239->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:33:32 [D] 1 client1 : Connect pre close
+16:33:32 [D] 1 client1 : Connect close ok.
+16:33:32 [D] 1 client1 : Connect pre close
+16:33:32 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:19239->127.0.0.1:9998: use of closed network connection]
+16:37:36 [D] 1           服务器{chat_client}启动
+16:37:36 [D] 1 client1 : Connect ok
+16:41:50 [W] 1166 Net packet header : 0 != 4
+16:41:51 [E] 1 client1 : Connect read[read tcp 127.0.0.1:20054->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:41:51 [D] 1 client1 : Connect pre close
+16:41:51 [D] 1 client1 : Connect close ok.
+16:41:51 [D] 1 client1 : Connect pre close
+16:41:51 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:20054->127.0.0.1:9998: use of closed network connection]
+16:41:57 [D] 1           服务器{chat_client}启动
+16:41:57 [D] 1 client1 : Connect ok
+16:43:54 [D] 1           服务器{chat_client}启动
+16:43:54 [D] 1 client1 : Connect ok
+16:56:56 [W] 6941 Net packet header : 0 != 4
+16:56:57 [E] 1 client1 : Connect read[read tcp 127.0.0.1:20507->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:56:57 [D] 1 client1 : Connect pre close
+16:56:57 [D] 1 client1 : Connect close ok.
+16:56:57 [D] 1 client1 : Connect pre close
+16:56:57 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:20507->127.0.0.1:9998: use of closed network connection]
+16:57:24 [D] 1           服务器{chat_client}启动
+16:57:24 [D] 1 client1 : Connect ok
+16:58:22 [D] 1           服务器{chat_client}启动
+16:58:22 [D] 1 client1 : Connect ok
+16:58:42 [W] 6311 Net packet header : 0 != 4
+16:58:42 [E] 1 client1 : Connect read[read tcp 127.0.0.1:21616->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:58:42 [D] 1 client1 : Connect pre close
+16:58:42 [D] 1 client1 : Connect close ok.
+16:58:42 [D] 1 client1 : Connect pre close
+16:58:42 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:21616->127.0.0.1:9998: use of closed network connection]
+16:58:49 [D] 1           服务器{chat_client}启动
+16:58:49 [D] 1 client1 : Connect ok
+17:01:36 [W] 1392 Net packet header : 0 != 4
+17:01:36 [E] 1 client1 : Connect read[read tcp 127.0.0.1:21660->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+17:01:36 [D] 1 client1 : Connect pre close
+17:01:36 [D] 1 client1 : Connect close ok.
+17:01:36 [D] 1 client1 : Connect pre close
+17:01:36 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:21660->127.0.0.1:9998: use of closed network connection]
+17:01:44 [D] 1           服务器{chat_client}启动
+17:01:44 [D] 1 client1 : Connect ok
+17:03:12 [W] 3639 Net packet header : 0 != 4
+17:03:12 [E] 1 client1 : Connect read[read tcp 127.0.0.1:21862->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+17:03:12 [D] 1 client1 : Connect pre close
+17:03:12 [D] 1 client1 : Connect close ok.
+17:03:12 [D] 1 client1 : Connect pre close
+17:03:12 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:21862->127.0.0.1:9998: use of closed network connection]
+17:03:20 [D] 1           服务器{chat_client}启动
+17:03:20 [D] 1 client1 : Connect ok
+17:03:45 [W] 8335 Net packet header : 0 != 4
+17:03:45 [E] 1 client1 : Connect read[read tcp 127.0.0.1:21990->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+17:03:45 [D] 1 client1 : Connect pre close
+17:03:45 [D] 1 client1 : Connect close ok.
+17:03:45 [D] 1 client1 : Connect pre close
+17:03:45 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:21990->127.0.0.1:9998: use of closed network connection]
+17:03:53 [D] 1           服务器{chat_client}启动
+17:03:53 [D] 1 client1 : Connect ok
