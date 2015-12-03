@@ -64,12 +64,6 @@ func (this *MasterThread) On_NetEvent(m *toogo.Tmsg_net) bool {
 		msgLogin.Sign = "wokao"
 		msgLogin.Write(p)
 
-		msgLogin2 := new(proto.C2M_login)
-		msgLogin2.Account = "wangyh"
-		msgLogin2.Time = 456
-		msgLogin2.Sign = "yeye"
-		msgLogin2.Write(p)
-
 		p.PacketWriteOver()
 		session := toogo.GetConnById(m.Id)
 		m := new(toogo.Tmsg_packet)
@@ -79,6 +73,23 @@ func (this *MasterThread) On_NetEvent(m *toogo.Tmsg_net) bool {
 
 		toogo.PostThreadMsg(session.MailId, m)
 
+		////////
+		p2 := new(toogo.PacketWriter)
+		d2 := make([]byte, 64)
+		p2.InitWriter(d2)
+		msgLogin2 := new(proto.C2M_login)
+		msgLogin2.Account = "wangyh"
+		msgLogin2.Time = 456
+		msgLogin2.Sign = "yeye"
+		msgLogin2.Write(p2)
+
+		p2.PacketWriteOver()
+		m2 := new(toogo.Tmsg_packet)
+		m2.Data = p2.GetData()
+		m2.Len = uint32(p2.GetPos())
+		m2.Count = uint32(p2.Count)
+
+		toogo.PostThreadMsg(session.MailId, m2)
 	case "read failed":
 		this.LogError("%s : Connect read[%s]", name_fix, m.Info)
 

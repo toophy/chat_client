@@ -338,3 +338,95 @@
 15:04:06 [E] 1 client1 : Connect failed[Connect dialtcp failed: '127.0.0.1:9998' dial tcp 127.0.0.1:9998: connectex: No connection could be made because the target machine actively refused it.]
 15:04:30 [D] 1           服务器{chat_client}启动
 15:04:30 [D] 1 client1 : Connect ok
+15:10:27 [D] 1           服务器{chat_client}启动
+15:10:28 [D] 1 client1 : Connect ok
+15:10:28 [W] 2602 ReadConnData : len =13, token=0, count=1
+15:10:46 [W] 2602 Net packet header : 2 != 4
+15:10:46 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14743->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:10:46 [D] 1 client1 : Connect pre close
+15:10:46 [D] 1 client1 : Connect pre close
+15:10:46 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14743->127.0.0.1:9998: use of closed network connection]
+15:10:46 [D] 1 client1 : Connect close ok.
+15:11:11 [D] 1           服务器{chat_client}启动
+15:11:11 [D] 1 client1 : Connect ok
+15:11:11 [W] 4503 ReadConnData : len =13, token=0, count=1
+15:11:47 [W] 4503 Net packet header : 2 != 4
+15:11:47 [E] 1 client1 : Connect read[read tcp 127.0.0.1:14792->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:11:47 [D] 1 client1 : Connect pre close
+15:11:47 [D] 1 client1 : Connect close ok.
+15:11:47 [D] 1 client1 : Connect pre close
+15:11:47 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:14792->127.0.0.1:9998: use of closed network connection]
+15:12:03 [D] 1           服务器{chat_client}启动
+15:12:03 [D] 1 client1 : Connect ok
+15:12:03 [W] 8350 ReadConnData : len =13, token=0, count=1
+15:12:03 [W] 8350 ReadConnData : len =0, token=13, count=0
+15:12:03 [W] 8350 Session::runReader:runtime error: makeslice: len out of range
+15:12:03 [D] 1 client1 : Connect pre close
+15:12:03 [D] 1 client1 : Connect close ok.
+16:11:35 [D] 1           服务器{chat_client}启动
+16:11:35 [D] 1 client1 : Connect ok
+16:11:35 [W] 2082 ReadConnData : len =13, token=0, count=1
+16:11:35 [W] 2082 ReadConnData : len =0, token=13, count=0
+16:11:35 [W] 2082 Session::runReader:runtime error: makeslice: len out of range
+16:11:35 [D] 1 client1 : Connect pre close
+16:11:35 [D] 1 client1 : Connect close ok.
+16:18:55 [D] 1           服务器{chat_client}启动
+16:18:55 [D] 1 client1 : Connect ok
+16:21:38 [W] 8784 Net packet header : 0 != 4
+16:21:38 [E] 1 client1 : Connect read[read tcp 127.0.0.1:17910->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:21:38 [D] 1 client1 : Connect pre close
+16:21:38 [D] 1 client1 : Connect close ok.
+16:21:38 [D] 1 client1 : Connect pre close
+16:21:38 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:17910->127.0.0.1:9998: use of closed network connection]
+16:21:47 [D] 1           服务器{chat_client}启动
+16:21:47 [D] 1 client1 : Connect ok
+16:22:21 [D] 1           服务器{chat_client}启动
+16:22:21 [D] 1 client1 : Connect ok
+16:22:21 [W] 996 Net packet header : 0 != 4
+16:22:21 [E] 1 client1 : Connect read[read tcp 127.0.0.1:18069->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:22:21 [D] 1 client1 : Connect pre close
+16:22:21 [D] 1 client1 : Connect close ok.
+16:22:21 [D] 1 client1 : Connect pre close
+16:22:21 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:18069->127.0.0.1:9998: use of closed network connection]
+16:31:36 [D] 1           服务器{chat_client}启动
+16:31:36 [D] 1 client1 : Connect ok
+16:31:36 [W] 1644 Net packet header : 0 != 4
+16:31:36 [E] 1 client1 : Connect read[read tcp 127.0.0.1:18467->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:31:36 [D] 1 client1 : Connect pre close
+16:31:36 [D] 1 client1 : Connect close ok.
+16:31:36 [D] 1 client1 : Connect pre close
+16:31:36 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:18467->127.0.0.1:9998: use of closed network connection]
+16:33:30 [D] 1           服务器{chat_client}启动
+16:33:30 [D] 1 client1 : Connect ok
+16:33:30 [W] 3745 Net packet header : 0 != 4
+16:33:30 [E] 1 client1 : Connect read[read tcp 127.0.0.1:18567->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:33:30 [D] 1 client1 : Connect pre close
+16:33:30 [D] 1 client1 : Connect pre close
+16:33:30 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:18567->127.0.0.1:9998: use of closed network connection]
+16:33:30 [D] 1 client1 : Connect close ok.
+16:35:11 [D] 1           服务器{chat_client}启动
+16:35:11 [D] 1 client1 : Connect ok
+16:44:20 [W] 3894 Net packet header : 0 != 4
+16:44:20 [E] 1 client1 : Connect read[read tcp 127.0.0.1:18660->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:44:20 [D] 1 client1 : Connect pre close
+16:44:20 [D] 1 client1 : Connect close ok.
+16:44:20 [D] 1 client1 : Connect pre close
+16:44:20 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:18660->127.0.0.1:9998: use of closed network connection]
+16:44:26 [D] 1           服务器{chat_client}启动
+16:44:26 [D] 1 client1 : Connect ok
+16:45:12 [W] 3125 Net packet header : 0 != 4
+16:45:12 [E] 1 client1 : Connect read[read tcp 127.0.0.1:19107->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:45:12 [D] 1 client1 : Connect pre close
+16:45:12 [D] 1 client1 : Connect close ok.
+16:45:12 [D] 1 client1 : Connect pre close
+16:45:12 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:19107->127.0.0.1:9998: use of closed network connection]
+16:47:02 [D] 1           服务器{chat_client}启动
+16:47:02 [D] 1 client1 : Connect ok
+16:51:37 [W] 1727 Net packet header : 0 != 4
+16:51:38 [E] 1 client1 : Connect read[read tcp 127.0.0.1:19244->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:51:38 [D] 1 client1 : Connect pre close
+16:51:38 [D] 1 client1 : Connect close ok.
+16:51:38 [D] 1 client1 : Connect pre close
+16:51:38 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:19244->127.0.0.1:9998: use of closed network connection]
+16:51:47 [D] 1           服务器{chat_client}启动
+16:51:47 [D] 1 client1 : Connect ok
