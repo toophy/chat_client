@@ -223,3 +223,118 @@
 17:03:45 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:21990->127.0.0.1:9998: use of closed network connection]
 17:03:53 [D] 1           服务器{chat_client}启动
 17:03:53 [D] 1 client1 : Connect ok
+09:55:01 [W] 13 Net packet header : 0 != 4
+09:55:01 [E] 1 client1 : Connect read[read tcp 127.0.0.1:22045->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+09:55:01 [D] 1 client1 : Connect pre close
+09:55:01 [D] 1 client1 : Connect close ok.
+09:55:01 [D] 1 client1 : Connect pre close
+09:55:01 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:22045->127.0.0.1:9998: use of closed network connection]
+11:18:12 [D] 1           服务器{chat_client}启动
+11:18:13 [D] 1 client1 : Connect ok
+11:19:17 [W] 679 Net packet header : 0 != 4
+11:19:17 [E] 1 client1 : Connect read[read tcp 127.0.0.1:3372->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+11:19:17 [D] 1 client1 : Connect pre close
+11:19:17 [D] 1 client1 : Connect close ok.
+11:19:17 [D] 1 client1 : Connect pre close
+11:19:17 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:3372->127.0.0.1:9998: use of closed network connection]
+11:30:01 [D] 1           服务器{chat_client}启动
+11:30:01 [D] 1 client1 : Connect ok
+11:31:00 [W] 6706 Net packet header : 0 != 4
+11:31:00 [E] 1 client1 : Connect read[read tcp 127.0.0.1:3993->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+11:31:00 [D] 1 client1 : Connect pre close
+11:31:00 [D] 1 client1 : Connect close ok.
+11:31:00 [D] 1 client1 : Connect pre close
+11:31:00 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:3993->127.0.0.1:9998: use of closed network connection]
+11:31:11 [D] 1           服务器{chat_client}启动
+11:31:11 [D] 1 client1 : Connect ok
+11:32:04 [W] 2908 Net packet header : 0 != 4
+11:32:04 [E] 1 client1 : Connect read[read tcp 127.0.0.1:4058->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+11:32:04 [D] 1 client1 : Connect pre close
+11:32:04 [D] 1 client1 : Connect close ok.
+11:32:04 [D] 1 client1 : Connect pre close
+11:32:04 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:4058->127.0.0.1:9998: use of closed network connection]
+11:32:17 [D] 1           服务器{chat_client}启动
+11:32:17 [D] 1 client1 : Connect ok
+11:32:27 [W] 486 Net packet header : 0 != 4
+11:32:27 [E] 1 client1 : Connect read[read tcp 127.0.0.1:4131->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+11:32:27 [D] 1 client1 : Connect pre close
+11:32:27 [D] 1 client1 : Connect close ok.
+11:32:27 [D] 1 client1 : Connect pre close
+11:32:27 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:4131->127.0.0.1:9998: use of closed network connection]
+11:32:41 [D] 1           服务器{chat_client}启动
+11:32:41 [D] 1 client1 : Connect ok
+13:09:11 [W] 1109 Net packet header : 0 != 4
+13:09:11 [E] 1 client1 : Connect read[read tcp 127.0.0.1:4172->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+13:09:11 [D] 1 client1 : Connect pre close
+13:09:11 [D] 1 client1 : Connect close ok.
+13:09:11 [D] 1 client1 : Connect pre close
+13:09:11 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:4172->127.0.0.1:9998: use of closed network connection]
+13:11:23 [D] 1           服务器{chat_client}启动
+13:11:23 [D] 1 client1 : Connect ok
+13:11:23 [W] 8523 ReadConnData : len =13, token=0, count=1
+13:11:23 [W] 8523 ReadConnData : len =0, token=13, count=0
+13:11:23 [W] 8523 Session::runReader:runtime error: makeslice: len out of range
+13:11:23 [D] 1 client1 : Connect pre close
+13:11:23 [D] 1 client1 : Connect close ok.
+13:11:50 [D] 1           服务器{chat_client}启动
+13:11:50 [D] 1 client1 : Connect ok
+13:11:50 [W] 1005 ReadConnData : len =13, token=0, count=1
+13:11:50 [W] 1005 ReadConnData : len =0, token=13, count=0
+13:11:50 [W] 1005 Session::runReader:runtime error: makeslice: len out of range
+13:11:50 [D] 1 client1 : Connect pre close
+13:11:50 [D] 1 client1 : Connect close ok.
+13:12:11 [D] 1           服务器{chat_client}启动
+13:12:11 [D] 1 client1 : Connect ok
+13:12:11 [W] 1625 ReadConnData : len =13, token=0, count=1
+13:12:11 [W] 1625 ReadConnData : len =0, token=13, count=0
+13:12:11 [W] 1625 Session::runReader:runtime error: makeslice: len out of range
+13:12:11 [D] 1 client1 : Connect pre close
+13:12:11 [D] 1 client1 : Connect close ok.
+14:33:09 [D] 1           服务器{chat_client}启动
+14:33:09 [D] 1 client1 : Connect ok
+14:45:58 [W] 5946 Net packet header : 0 != 4
+14:45:58 [E] 1 client1 : Connect read[read tcp 127.0.0.1:13090->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:45:58 [D] 1 client1 : Connect pre close
+14:45:58 [D] 1 client1 : Connect close ok.
+14:45:58 [D] 1 client1 : Connect pre close
+14:45:58 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:13090->127.0.0.1:9998: use of closed network connection]
+14:46:31 [D] 1           服务器{chat_client}启动
+14:46:31 [D] 1 client1 : Connect ok
+14:51:19 [W] 6951 Net packet header : 0 != 4
+14:51:19 [E] 1 client1 : Connect read[read tcp 127.0.0.1:13637->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:51:19 [D] 1 client1 : Connect pre close
+14:51:19 [D] 1 client1 : Connect pre close
+14:51:19 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:13637->127.0.0.1:9998: use of closed network connection]
+14:51:19 [D] 1 client1 : Connect close ok.
+14:51:34 [D] 1           服务器{chat_client}启动
+14:51:34 [D] 1 client1 : Connect ok
+14:51:34 [W] 6963 ReadConnData : len =13, token=0, count=1
+14:51:34 [W] 6963 ReadConnData : len =0, token=13, count=0
+14:51:34 [W] 6963 Session::runReader:runtime error: makeslice: len out of range
+14:51:34 [D] 1 client1 : Connect pre close
+14:51:34 [D] 1 client1 : Connect close ok.
+14:56:01 [D] 1           服务器{chat_client}启动
+14:56:01 [D] 1 client1 : Connect ok
+14:56:01 [W] 7908 ReadConnData : len =13, token=0, count=1
+14:56:01 [W] 7908 ReadConnData : len =0, token=13, count=0
+14:56:01 [W] 7908 Session::runReader:runtime error: makeslice: len out of range
+14:56:01 [D] 1 client1 : Connect pre close
+14:56:01 [D] 1 client1 : Connect close ok.
+15:01:06 [D] 1           服务器{chat_client}启动
+15:01:06 [D] 1 client1 : Connect ok
+15:01:06 [W] 4123 ReadConnData : len =13, token=0, count=1
+15:01:06 [W] 4123 ReadConnData : len =0, token=13, count=0
+15:01:06 [W] 4123 Session::runReader:runtime error: makeslice: len out of range
+15:01:06 [D] 1 client1 : Connect pre close
+15:01:06 [D] 1 client1 : Connect close ok.
+15:02:01 [D] 1           服务器{chat_client}启动
+15:02:02 [D] 1 client1 : Connect ok
+15:02:02 [W] 7775 ReadConnData : len =13, token=0, count=1
+15:02:02 [W] 7775 ReadConnData : len =0, token=13, count=0
+15:02:02 [W] 7775 Session::runReader:runtime error: makeslice: len out of range
+15:02:02 [D] 1 client1 : Connect pre close
+15:02:02 [D] 1 client1 : Connect close ok.
+15:04:05 [D] 1           服务器{chat_client}启动
+15:04:06 [E] 1 client1 : Connect failed[Connect dialtcp failed: '127.0.0.1:9998' dial tcp 127.0.0.1:9998: connectex: No connection could be made because the target machine actively refused it.]
+15:04:30 [D] 1           服务器{chat_client}启动
+15:04:30 [D] 1 client1 : Connect ok
