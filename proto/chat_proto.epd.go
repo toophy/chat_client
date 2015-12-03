@@ -17,18 +17,26 @@ type C2M_login struct {
 	Sign    string // 验证码
 }
 
-func (t *C2M_login) Read(p *PacketReader) {
+func (t *C2M_login) Read(p *PacketReader) bool {
+	defer RecoverRead(C2M_login_Id)
+
 	t.Account = p.ReadString()
 	t.Time = p.ReadInt32()
 	t.Sign = p.ReadString()
+
+	return true
 }
 
-func (t *C2M_login) Write(p *PacketWriter) {
+func (t *C2M_login) Write(p *PacketWriter) bool {
+	defer RecoverWrite(C2M_login_Id)
+
 	p.WriteMsgId(C2M_login_Id)
 	p.WriteString(&t.Account)
 	p.WriteInt32(t.Time)
 	p.WriteString(&t.Sign)
 	p.WriteMsgOver()
+
+	return true
 }
 
 // 服务器响应登录
@@ -39,14 +47,22 @@ type M2C_login_ret struct {
 	Msg string // 登录失败描述
 }
 
-func (t *M2C_login_ret) Read(p *PacketReader) {
+func (t *M2C_login_ret) Read(p *PacketReader) bool {
+	defer RecoverRead(M2C_login_ret_Id)
+
 	t.Ret = p.ReadInt8()
 	t.Msg = p.ReadString()
+
+	return true
 }
 
-func (t *M2C_login_ret) Write(p *PacketWriter) {
+func (t *M2C_login_ret) Write(p *PacketWriter) bool {
+	defer RecoverWrite(M2C_login_ret_Id)
+
 	p.WriteMsgId(M2C_login_ret_Id)
 	p.WriteInt8(t.Ret)
 	p.WriteString(&t.Msg)
 	p.WriteMsgOver()
+
+	return true
 }

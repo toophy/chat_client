@@ -430,3 +430,7 @@
 16:51:38 [E] 1 client1 : Connect close failed[close tcp 127.0.0.1:19244->127.0.0.1:9998: use of closed network connection]
 16:51:47 [D] 1           服务器{chat_client}启动
 16:51:47 [D] 1 client1 : Connect ok
+17:57:27 [D] 1           服务器{chat_client}启动
+17:57:28 [E] 1 client1 : Connect failed[Connect dialtcp failed: '127.0.0.1:9998' dial tcp 127.0.0.1:9998: connectex: No connection could be made because the target machine actively refused it.]
+17:58:11 [D] 1           服务器{chat_client}启动
+17:58:11 [D] 1 client1 : Connect ok
