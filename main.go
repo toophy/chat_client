@@ -12,11 +12,11 @@ type MasterThread struct {
 }
 
 // 首次运行
-func (this *MasterThread) On_first_run() {
+func (this *MasterThread) On_firstRun() {
 }
 
 // 响应线程最先运行
-func (this *MasterThread) On_pre_run() {
+func (this *MasterThread) On_preRun() {
 	// 处理各种最先处理的问题
 }
 
@@ -29,7 +29,7 @@ func (this *MasterThread) On_end() {
 }
 
 // 响应网络事件
-func (this *MasterThread) On_NetEvent(m *toogo.Tmsg_net) bool {
+func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 
 	name_fix := m.Name
 	if len(name_fix) == 0 {
@@ -65,7 +65,7 @@ func (this *MasterThread) On_NetEvent(m *toogo.Tmsg_net) bool {
 		msgLogin.Write(p)
 
 		p.PacketWriteOver()
-		session := toogo.GetConnById(m.Id)
+		session := toogo.GetSessionById(m.Id)
 		m := new(toogo.Tmsg_packet)
 		m.Data = p.GetData()
 		m.Len = uint32(p.GetPos())
@@ -106,8 +106,13 @@ func (this *MasterThread) On_NetEvent(m *toogo.Tmsg_net) bool {
 	return true
 }
 
+// -- 当网络消息包解析出现问题, 如何处理?
+func (this *MasterThread) On_packetError(m *toogo.Tmsg_packet) {
+	toogo.CloseSession(this.Get_thread_id(), m.SessionId)
+}
+
 // 注册消息
-func (this *MasterThread) On_RegistNetMsg() {
+func (this *MasterThread) On_registNetMsg() {
 	this.RegistNetMsg(proto.M2C_login_ret_Id, this.on_m2c_login_ret)
 }
 
@@ -123,12 +128,3 @@ func main() {
 	main_thread.Init_thread(main_thread, toogo.Tid_master, "master", 1000, 100, 10000)
 	toogo.Run(main_thread)
 }
-
-// 消息 read write 增加 defer, 拦截底层的readxxx的panic, 返回读取结果(bool), 根据结果处理这个session
-// 消息注册表移植到threadbase, IThread提供OnRegistNetMsg供继承者使用
-
-// 网络包解包错误及应对, 严重错误达到一定数量, 断开连接
-// Count    错误 (太少,太多), 严重错误1次
-// 长度     错误 (太短,太长), 严重错误1次
-// 消息ID   错误 (不存在的ID,跳到下一个消息), 严重错误1次
-// 消息数据 错误 (太长,跳到下一个消息), 严重错误1次
