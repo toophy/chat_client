@@ -33,7 +33,7 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 
 	name_fix := m.Name
 	if len(name_fix) == 0 {
-		name_fix = fmt.Sprintf("Conn[%d]", m.Id)
+		name_fix = fmt.Sprintf("Conn[%d]", m.SessionId)
 	}
 
 	switch m.Msg {
@@ -41,7 +41,7 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 		this.LogFatal("%s : Listen failed[%s]", name_fix, m.Info)
 
 	case "listen ok":
-		this.LogInfo("%s : Listen(0.0.0.0:%d) ok.", name_fix, 8001)
+		this.LogInfo("%s : Listen(%s) ok.", name_fix, toogo.GetSessionById(m.SessionId).GetIPAddress())
 
 	case "accept failed":
 		this.LogFatal(m.Info)
@@ -58,38 +58,21 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 		p := new(toogo.PacketWriter)
 		d := make([]byte, 64)
 		p.InitWriter(d)
-		msgLogin := new(proto.C2M_login)
+		msgLogin := new(proto.C2G_login)
 		msgLogin.Account = "liusl"
 		msgLogin.Time = 123
 		msgLogin.Sign = "wokao"
 		msgLogin.Write(p)
 
 		p.PacketWriteOver()
-		session := toogo.GetSessionById(m.Id)
-		m := new(toogo.Tmsg_packet)
-		m.Data = p.GetData()
-		m.Len = uint32(p.GetPos())
-		m.Count = uint32(p.Count)
+		session := toogo.GetSessionById(m.SessionId)
+		x := new(toogo.Tmsg_packet)
+		x.Data = p.GetData()
+		x.Len = uint32(p.GetPos())
+		x.Count = uint16(p.Count)
 
-		toogo.PostThreadMsg(session.MailId, m)
+		toogo.PostThreadMsg(session.MailId, x)
 
-		////////
-		p2 := new(toogo.PacketWriter)
-		d2 := make([]byte, 64)
-		p2.InitWriter(d2)
-		msgLogin2 := new(proto.C2M_login)
-		msgLogin2.Account = "wangyh"
-		msgLogin2.Time = 456
-		msgLogin2.Sign = "yeye"
-		msgLogin2.Write(p2)
-
-		p2.PacketWriteOver()
-		m2 := new(toogo.Tmsg_packet)
-		m2.Data = p2.GetData()
-		m2.Len = uint32(p2.GetPos())
-		m2.Count = uint32(p2.Count)
-
-		toogo.PostThreadMsg(session.MailId, m2)
 	case "read failed":
 		this.LogError("%s : Connect read[%s]", name_fix, m.Info)
 
@@ -107,19 +90,36 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 }
 
 // -- 当网络消息包解析出现问题, 如何处理?
-func (this *MasterThread) On_packetError(m *toogo.Tmsg_packet) {
-	toogo.CloseSession(this.Get_thread_id(), m.SessionId)
+func (this *MasterThread) On_packetError(sessionId uint32) {
+	toogo.CloseSession(this.Get_thread_id(), sessionId)
 }
 
 // 注册消息
 func (this *MasterThread) On_registNetMsg() {
-	this.RegistNetMsg(proto.M2C_login_ret_Id, this.on_m2c_login_ret)
+	this.RegistNetMsg(proto.G2C_login_ret_Id, this.on_g2c_login_ret)
 }
 
-func (this *MasterThread) on_m2c_login_ret(pack *toogo.PacketReader, sessionId uint32) bool {
-	msg := new(proto.M2C_login_ret)
+func (this *MasterThread) on_g2c_login_ret(pack *toogo.PacketReader, sessionId uint32) bool {
+	msg := new(proto.G2C_login_ret)
 	msg.Read(pack)
-	fmt.Println(msg)
+
+	p := new(toogo.PacketWriter)
+	d := make([]byte, 64)
+	p.InitWriter(d)
+	msgSend := new(proto.C2S_chat)
+	msgSend.Channel = 1
+	msgSend.Data = "你好,世界!"
+	msgSend.Write(p)
+
+	p.PacketWriteOver()
+	session := toogo.GetSessionById(sessionId)
+	x := new(toogo.Tmsg_packet)
+	x.Data = p.GetData()
+	x.Len = uint32(p.GetPos())
+	x.Count = uint16(p.Count)
+
+	toogo.PostThreadMsg(session.MailId, x)
+
 	return true
 }
 

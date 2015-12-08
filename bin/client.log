@@ -444,3 +444,20 @@
 11:47:44 [D] 1 client1 : Connect ok
 11:48:13 [D] 1           服务器{chat_client}启动
 11:48:13 [D] 1 client1 : Connect ok
+14:29:20 [D] 1           服务器{chat_client}启动
+14:29:20 [D] 1 to_gate : Connect ok
+14:29:54 [D] 1           服务器{chat_client}启动
+14:29:54 [D] 1 to_gate : Connect ok
+15:05:20 [D] 1           服务器{chat_client}启动
+15:05:20 [D] 1 to_gate : Connect ok
+15:05:20 [W] 5440 Net packet header : 0 != 4
+15:05:20 [E] 1 to_gate : Connect read[EOF]
+15:05:20 [D] 1 to_gate : Connect pre close
+15:05:20 [D] 1 to_gate : Connect close ok.
+15:05:56 [D] 1           服务器{chat_client}启动
+15:05:56 [D] 1 to_gate : Connect ok
+17:46:59 [W] 2675 Net packet header : 0 != 4
+17:46:59 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:10214->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+17:46:59 [D] 1 to_gate : Connect pre close
+17:46:59 [D] 1 to_gate : Connect close ok.
+17:47:16 [D] 1           服务器{chat_client}启动
