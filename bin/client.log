@@ -730,3 +730,6 @@
 15:40:53 [D] 1 to_gate : Connect ok
 15:40:53 [I] 1 send C2G_login
 15:40:53 [I] 1 on_g2c_login_ret
+16:41:34 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:54876->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:41:34 [D] 1 to_gate : Connect pre close
+16:41:34 [D] 1 to_gate : Connect close ok.

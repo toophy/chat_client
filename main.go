@@ -100,12 +100,14 @@ func (this *MasterThread) on_g2c_login_ret(pack *toogo.PacketReader, sessionId u
 	this.LogInfo("on_g2c_login_ret")
 
 	p := toogo.NewPacket(128)
-	msgSend := new(proto.C2S_chat)
-	msgSend.Channel = 1
-	msgSend.Data = "你好,世界!"
-	msgSend.Write(p)
+	if p != nil {
+		msgSend := new(proto.C2S_chat)
+		msgSend.Channel = 1
+		msgSend.Data = "你好,世界!"
+		msgSend.Write(p)
 
-	toogo.SendPacket(p, sessionId)
+		toogo.SendPacket(p, sessionId)
+	}
 
 	return true
 }
