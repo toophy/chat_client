@@ -55,9 +55,9 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 
 	case "connect ok":
 		this.LogDebug("%s : Connect ok", name_fix)
-		p := new(toogo.PacketWriter)
-		d := make([]byte, 64)
-		p.InitWriter(d)
+
+		p := toogo.NewPacket(128)
+
 		msgLogin := new(proto.C2G_login)
 		msgLogin.Account = "liusl"
 		msgLogin.Time = 123
@@ -65,14 +65,7 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 		msgLogin.Write(p)
 		this.LogInfo("send C2G_login")
 
-		p.PacketWriteOver()
-		session := toogo.GetSessionById(m.SessionId)
-		x := new(toogo.Tmsg_packet)
-		x.Data = p.GetData()
-		x.Len = uint32(p.GetPos())
-		x.Count = uint16(p.Count)
-
-		toogo.PostThreadMsg(session.MailId, x)
+		toogo.SendPacket(p, m.SessionId)
 
 	case "read failed":
 		this.LogError("%s : Connect read[%s]", name_fix, m.Info)
@@ -91,7 +84,7 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 }
 
 // -- 当网络消息包解析出现问题, 如何处理?
-func (this *MasterThread) On_packetError(sessionId uint32) {
+func (this *MasterThread) On_packetError(sessionId uint64) {
 	toogo.CloseSession(this.Get_thread_id(), sessionId)
 }
 
@@ -100,28 +93,19 @@ func (this *MasterThread) On_registNetMsg() {
 	this.RegistNetMsg(proto.G2C_login_ret_Id, this.on_g2c_login_ret)
 }
 
-func (this *MasterThread) on_g2c_login_ret(pack *toogo.PacketReader, sessionId uint32) bool {
+func (this *MasterThread) on_g2c_login_ret(pack *toogo.PacketReader, sessionId uint64) bool {
 	msg := new(proto.G2C_login_ret)
 	msg.Read(pack)
 
 	this.LogInfo("on_g2c_login_ret")
 
-	p := new(toogo.PacketWriter)
-	d := make([]byte, 64)
-	p.InitWriter(d)
+	p := toogo.NewPacket(128)
 	msgSend := new(proto.C2S_chat)
 	msgSend.Channel = 1
 	msgSend.Data = "你好,世界!"
 	msgSend.Write(p)
 
-	p.PacketWriteOver()
-	session := toogo.GetSessionById(sessionId)
-	x := new(toogo.Tmsg_packet)
-	x.Data = p.GetData()
-	x.Len = uint32(p.GetPos())
-	x.Count = uint16(p.Count)
-
-	toogo.PostThreadMsg(session.MailId, x)
+	toogo.SendPacket(p, sessionId)
 
 	return true
 }
