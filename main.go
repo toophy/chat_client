@@ -63,6 +63,7 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 		msgLogin.Time = 123
 		msgLogin.Sign = "wokao"
 		msgLogin.Write(p)
+		this.LogInfo("send C2G_login")
 
 		p.PacketWriteOver()
 		session := toogo.GetSessionById(m.SessionId)
@@ -102,6 +103,8 @@ func (this *MasterThread) On_registNetMsg() {
 func (this *MasterThread) on_g2c_login_ret(pack *toogo.PacketReader, sessionId uint32) bool {
 	msg := new(proto.G2C_login_ret)
 	msg.Read(pack)
+
+	this.LogInfo("on_g2c_login_ret")
 
 	p := new(toogo.PacketWriter)
 	d := make([]byte, 64)

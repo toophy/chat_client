@@ -461,3 +461,251 @@
 17:46:59 [D] 1 to_gate : Connect pre close
 17:46:59 [D] 1 to_gate : Connect close ok.
 17:47:16 [D] 1           服务器{chat_client}启动
+09:56:30 [D] 1           服务器{chat_client}启动
+09:56:31 [D] 1 to_gate : Connect ok
+09:56:31 [E] 1 to_gate : Connect read[EOF]
+09:56:31 [D] 1 to_gate : Connect pre close
+09:56:31 [D] 1 to_gate : Connect close ok.
+10:07:23 [D] 1           服务器{chat_client}启动
+10:07:23 [D] 1 to_gate : Connect ok
+10:07:23 [E] 1 to_gate : Connect read[EOF]
+10:07:23 [D] 1 to_gate : Connect pre close
+10:07:23 [D] 1 to_gate : Connect close ok.
+10:07:57 [D] 1           服务器{chat_client}启动
+10:07:57 [D] 1 to_gate : Connect ok
+10:07:57 [E] 1 to_gate : Connect read[EOF]
+10:07:57 [D] 1 to_gate : Connect pre close
+10:07:57 [D] 1 to_gate : Connect close ok.
+10:09:58 [D] 1           服务器{chat_client}启动
+10:09:58 [I] 162 SessionCG
+10:09:59 [D] 1 to_gate : Connect ok
+10:09:59 [E] 1 to_gate : Connect read[EOF]
+10:09:59 [D] 1 to_gate : Connect pre close
+10:09:59 [D] 1 to_gate : Connect close ok.
+10:16:41 [D] 1           服务器{chat_client}启动
+10:16:41 [D] 1 to_gate : Connect ok
+10:16:42 [E] 1 to_gate : Connect read[EOF]
+10:16:42 [D] 1 to_gate : Connect pre close
+10:16:42 [D] 1 to_gate : Connect close ok.
+10:17:42 [D] 1           服务器{chat_client}启动
+10:17:42 [D] 1 to_gate : Connect ok
+10:17:42 [E] 1 to_gate : Connect read[EOF]
+10:17:42 [D] 1 to_gate : Connect pre close
+10:17:42 [D] 1 to_gate : Connect close ok.
+10:22:25 [D] 1           服务器{chat_client}启动
+10:22:26 [D] 1 to_gate : Connect ok
+10:24:11 [D] 1           服务器{chat_client}启动
+10:24:11 [D] 1 to_gate : Connect ok
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:24:11 [I] 1 on_g2c_login_ret
+10:25:32 [D] 1           服务器{chat_client}启动
+10:25:32 [D] 1 to_gate : Connect ok
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:32 [I] 1 on_g2c_login_ret
+10:25:37 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:18863->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+10:25:37 [D] 1 to_gate : Connect pre close
+10:25:37 [D] 1 to_gate : Connect close ok.
+10:25:45 [D] 1           服务器{chat_client}启动
+10:25:45 [D] 1 to_gate : Connect ok
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:25:46 [I] 1 on_g2c_login_ret
+10:27:00 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:18897->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+10:27:00 [D] 1 to_gate : Connect pre close
+10:27:00 [D] 1 to_gate : Connect close ok.
+10:27:12 [D] 1           服务器{chat_client}启动
+10:27:12 [D] 1 to_gate : Connect ok
+10:27:12 [I] 1 send C2G_login
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:27:13 [I] 1 on_g2c_login_ret
+10:43:33 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:19020->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+10:43:33 [D] 1 to_gate : Connect pre close
+10:43:33 [D] 1 to_gate : Connect close ok.
+10:43:46 [D] 1           服务器{chat_client}启动
+10:43:46 [D] 1 to_gate : Connect ok
+10:43:46 [I] 1 send C2G_login
+10:43:46 [I] 1 on_g2c_login_ret
+10:45:14 [D] 1           服务器{chat_client}启动
+10:45:14 [D] 1 to_gate : Connect ok
+10:45:14 [I] 1 send C2G_login
+10:45:14 [I] 1458 wLen=26,t.Len=26
+10:45:14 [I] 1458 wLen=26,t.Len=26
+10:45:14 [I] 1458 wLen=26,t.Len=26
+10:45:14 [I] 1458 wLen=26,t.Len=26
+10:45:14 [I] 1458 wLen=26,t.Len=26
+10:45:14 [I] 1458 wLen=26,t.Len=26
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1 on_g2c_login_ret
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:45:14 [I] 1458 wLen=28,t.Len=28
+10:46:30 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:21588->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+10:46:30 [D] 1 to_gate : Connect pre close
+10:46:30 [D] 1 to_gate : Connect close ok.
+10:46:42 [D] 1           服务器{chat_client}启动
+10:46:42 [D] 1 to_gate : Connect ok
+10:46:42 [I] 1 send C2G_login
+10:46:42 [I] 272 wLen=26,t.Len=26
+10:46:42 [I] 1 on_g2c_login_ret
+10:46:42 [I] 272 wLen=28,t.Len=28
+10:47:29 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:21737->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+10:47:29 [D] 1 to_gate : Connect pre close
+10:47:29 [D] 1 to_gate : Connect close ok.
+10:47:49 [D] 1           服务器{chat_client}启动
+10:47:49 [D] 1 to_gate : Connect ok
+10:47:49 [I] 1 send C2G_login
+10:47:49 [I] 1 on_g2c_login_ret
