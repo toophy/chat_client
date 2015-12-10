@@ -56,7 +56,7 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 	case "connect ok":
 		this.LogDebug("%s : Connect ok", name_fix)
 
-		p := toogo.NewPacket(128)
+		p := toogo.NewPacket(128, m.SessionId)
 
 		msgLogin := new(proto.C2G_login)
 		msgLogin.Account = "liusl"
@@ -65,7 +65,7 @@ func (this *MasterThread) On_netEvent(m *toogo.Tmsg_net) bool {
 		msgLogin.Write(p)
 		this.LogInfo("send C2G_login")
 
-		toogo.SendPacket(p, m.SessionId)
+		toogo.SendPacket(p)
 
 	case "read failed":
 		this.LogError("%s : Connect read[%s]", name_fix, m.Info)
@@ -99,14 +99,14 @@ func (this *MasterThread) on_g2c_login_ret(pack *toogo.PacketReader, sessionId u
 
 	this.LogInfo("on_g2c_login_ret")
 
-	p := toogo.NewPacket(128)
+	p := toogo.NewPacket(128, sessionId)
 	if p != nil {
 		msgSend := new(proto.C2S_chat)
 		msgSend.Channel = 1
 		msgSend.Data = "你好,世界!"
 		msgSend.Write(p)
 
-		toogo.SendPacket(p, sessionId)
+		toogo.SendPacket(p)
 	}
 
 	return true
