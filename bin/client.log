@@ -733,3 +733,109 @@
 16:41:34 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:54876->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
 16:41:34 [D] 1 to_gate : Connect pre close
 16:41:34 [D] 1 to_gate : Connect close ok.
+14:09:47 [D] 1           服务器{chat_client}启动
+14:14:40 [D] 1           服务器{chat_client}启动
+14:14:40 [D] 1 to_gate : Connect ok
+14:14:40 [I] 1 send C2G_login
+14:14:40 [I] 1 on_g2c_login_ret
+14:15:06 [D] 1           服务器{chat_client}启动
+14:15:06 [D] 1 to_gate : Connect ok
+14:15:06 [I] 1 send C2G_login
+14:15:06 [I] 1 on_g2c_login_ret
+14:15:06 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:13267->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:15:06 [D] 1 to_gate : Connect pre close
+14:15:06 [D] 1 to_gate : Connect close ok.
+14:17:11 [D] 1           服务器{chat_client}启动
+14:17:11 [D] 1 to_gate : Connect ok
+14:17:11 [I] 1 send C2G_login
+14:17:11 [I] 1 on_g2c_login_ret
+14:17:11 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:13450->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:17:11 [D] 1 to_gate : Connect pre close
+14:17:11 [D] 1 to_gate : Connect close ok.
+14:18:46 [D] 1           服务器{chat_client}启动
+14:18:46 [D] 1 to_gate : Connect ok
+14:18:46 [I] 1 send C2G_login
+14:18:46 [I] 1 on_g2c_login_ret
+14:18:47 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:13595->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:18:47 [D] 1 to_gate : Connect pre close
+14:18:47 [D] 1 to_gate : Connect close ok.
+14:19:35 [D] 1           服务器{chat_client}启动
+14:19:35 [D] 1 to_gate : Connect ok
+14:19:35 [I] 1 send C2G_login
+14:19:35 [I] 1 on_g2c_login_ret
+14:19:36 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:13699->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:19:36 [D] 1 to_gate : Connect pre close
+14:19:36 [D] 1 to_gate : Connect close ok.
+14:21:19 [D] 1           服务器{chat_client}启动
+14:21:19 [D] 1 to_gate : Connect ok
+14:21:19 [I] 1 send C2G_login
+14:21:19 [I] 1 on_g2c_login_ret
+14:29:59 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:13869->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:29:59 [D] 1 to_gate : Connect pre close
+14:29:59 [D] 1 to_gate : Connect close ok.
+14:33:27 [D] 1           服务器{chat_client}启动
+14:33:27 [D] 1 to_gate : Connect ok
+14:33:27 [I] 1 send C2G_login
+14:33:27 [I] 1 on_g2c_login_ret
+14:34:13 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:15422->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:34:13 [D] 1 to_gate : Connect pre close
+14:34:13 [D] 1 to_gate : Connect close ok.
+14:35:29 [D] 1           服务器{chat_client}启动
+14:35:29 [D] 1 to_gate : Connect ok
+14:35:29 [I] 1 send C2G_login
+14:35:29 [I] 1 on_g2c_login_ret
+15:04:21 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:15624->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:04:21 [D] 1 to_gate : Connect pre close
+15:04:21 [D] 1 to_gate : Connect close ok.
+15:04:36 [D] 1           服务器{chat_client}启动
+15:04:36 [D] 1 to_gate : Connect ok
+15:04:36 [I] 1 send C2G_login
+15:04:36 [I] 1 on_g2c_login_ret
+15:05:58 [D] 1           服务器{chat_client}启动
+15:05:58 [D] 1 to_gate : Connect ok
+15:05:58 [I] 1 send C2G_login
+15:05:58 [I] 1 on_g2c_login_ret
+15:40:54 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:17885->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:40:54 [D] 1 to_gate : Connect pre close
+15:40:54 [D] 1 to_gate : Connect close ok.
+15:41:11 [D] 1           服务器{chat_client}启动
+15:41:11 [D] 1 to_gate : Connect ok
+15:41:11 [I] 1 send C2G_login
+15:41:11 [I] 1 on_g2c_login_ret
+15:43:12 [D] 1           服务器{chat_client}启动
+15:43:12 [D] 1 to_gate : Connect ok
+15:43:12 [I] 1 send C2G_login
+15:43:12 [I] 1 on_g2c_login_ret
+15:45:26 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:21891->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:45:26 [D] 1 to_gate : Connect pre close
+15:45:26 [D] 1 to_gate : Connect close ok.
+15:45:44 [D] 1           服务器{chat_client}启动
+15:45:44 [D] 1 to_gate : Connect ok
+15:45:44 [I] 1 send C2G_login
+15:45:45 [I] 1 on_g2c_login_ret
+15:53:15 [D] 1           服务器{chat_client}启动
+15:53:15 [D] 1 to_gate : Connect ok
+15:53:15 [I] 1 send C2G_login
+15:53:15 [I] 1 on_g2c_login_ret
+15:53:56 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:22659->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:53:56 [D] 1 to_gate : Connect pre close
+15:53:56 [D] 1 to_gate : Connect close ok.
+15:54:10 [D] 1           服务器{chat_client}启动
+15:54:10 [D] 1 to_gate : Connect ok
+15:54:10 [I] 1 send C2G_login
+15:54:10 [I] 1 on_g2c_login_ret
+15:55:58 [D] 1           服务器{chat_client}启动
+15:55:58 [D] 1 to_gate : Connect ok
+15:55:58 [I] 1 send C2G_login
+15:55:58 [I] 1 on_g2c_login_ret
+15:57:11 [D] 1           服务器{chat_client}启动
+15:57:11 [D] 1 to_gate : Connect ok
+15:57:11 [I] 1 send C2G_login
+15:57:12 [I] 1 on_g2c_login_ret
+16:09:08 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:23057->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+16:09:08 [D] 1 to_gate : Connect pre close
+16:09:08 [D] 1 to_gate : Connect close ok.
+16:09:20 [D] 1           服务器{chat_client}启动
+16:09:20 [D] 1 to_gate : Connect ok
+16:09:20 [I] 1 send C2G_login
+16:09:20 [I] 1 on_g2c_login_ret
