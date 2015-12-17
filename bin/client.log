@@ -839,3 +839,8 @@
 16:09:20 [D] 1 to_gate : Connect ok
 16:09:20 [I] 1 send C2G_login
 16:09:20 [I] 1 on_g2c_login_ret
+14:53:40 [D] 1           服务器{chat_client}启动
+14:53:41 [E] 1 to_gate : Connect failed[Connect dialtcp failed: '127.0.0.1:9998' dial tcp 127.0.0.1:9998: connectex: No connection could be made because the target machine actively refused it.]
+14:59:39 [D] 1           服务器{chat_client}启动
+14:59:51 [D] 1           服务器{chat_client}启动
+14:59:52 [E] 1 to_gate : Connect failed[Connect dialtcp failed: '127.0.0.1:9998' dial tcp 127.0.0.1:9998: connectex: No connection could be made because the target machine actively refused it.]
