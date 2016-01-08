@@ -853,3 +853,43 @@
 11:08:09 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:15017->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
 11:08:09 [D] 1 to_gate : Connect pre close
 11:08:09 [D] 1 to_gate : Connect close ok.
+14:03:07 [D] 1           服务器{chat_client}启动
+14:03:07 [D] 1 to_gate : Connect ok
+14:03:07 [I] 1 send C2G_login
+14:03:07 [I] 1 on_g2c_login_ret
+15:53:31 [D] 1           服务器{chat_client}启动
+15:53:31 [D] 1 to_gate : Connect ok
+15:53:31 [I] 1 send C2G_login
+15:53:31 [I] 1 on_g2c_login_ret
+15:55:00 [D] 1           服务器{chat_client}启动
+15:55:01 [E] 1 to_gate : Connect failed[Connect dialtcp failed: '127.0.0.1:9998' dial tcp 127.0.0.1:9998: connectex: No connection could be made because the target machine actively refused it.]
+15:55:07 [D] 1           服务器{chat_client}启动
+15:55:08 [D] 1 to_gate : Connect ok
+15:55:08 [I] 1 send C2G_login
+15:55:08 [I] 1 on_g2c_login_ret
+15:55:21 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:4219->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:55:21 [D] 1 to_gate : Connect pre close
+15:55:21 [D] 1 to_gate : Connect close ok.
+15:55:36 [D] 1           服务器{chat_client}启动
+15:55:36 [D] 1 to_gate : Connect ok
+15:55:36 [I] 1 send C2G_login
+15:55:36 [I] 1 on_g2c_login_ret
+15:58:02 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:4249->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:58:02 [D] 1 to_gate : Connect pre close
+15:58:02 [D] 1 to_gate : Connect close ok.
+15:58:15 [D] 1           服务器{chat_client}启动
+15:58:15 [D] 1 to_gate : Connect ok
+15:58:15 [I] 1 send C2G_login
+15:58:15 [I] 1 on_g2c_login_ret
+16:09:42 [D] 1           服务器{chat_client}启动
+16:09:42 [D] 1 to_gate : Connect ok
+16:09:42 [I] 1 send C2G_login
+16:09:42 [I] 1 on_g2c_login_ret
+16:11:59 [D] 1           服务器{chat_client}启动
+16:11:59 [D] 1 to_gate : Connect ok
+16:11:59 [I] 1 send C2G_login
+16:11:59 [I] 1 on_g2c_login_ret
+16:24:20 [D] 1           服务器{chat_client}启动
+16:24:20 [D] 1 to_gate : Connect ok
+16:24:20 [I] 1 send C2G_login
+16:24:21 [I] 1 on_g2c_login_ret
