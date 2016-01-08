@@ -893,3 +893,14 @@
 16:24:20 [D] 1 to_gate : Connect ok
 16:24:20 [I] 1 send C2G_login
 16:24:21 [I] 1 on_g2c_login_ret
+17:53:25 [D] 1           服务器{chat_client}启动
+17:53:25 [D] 1 to_gate : Connect ok
+17:53:25 [I] 1 send C2G_login
+17:53:25 [I] 1 on_g2c_login_ret
+17:53:25 [E] 1 to_gate : Connect read[EOF]
+17:53:25 [D] 1 to_gate : Connect pre close
+17:53:25 [D] 1 to_gate : Connect close ok.
+17:58:16 [D] 1           服务器{chat_client}启动
+17:58:16 [D] 1 to_gate : Connect ok
+17:58:16 [I] 1 send C2G_login
+17:58:16 [I] 1 on_g2c_login_ret
