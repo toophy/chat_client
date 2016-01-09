@@ -904,3 +904,89 @@
 17:58:16 [D] 1 to_gate : Connect ok
 17:58:16 [I] 1 send C2G_login
 17:58:16 [I] 1 on_g2c_login_ret
+14:31:47 [D] 1           服务器{chat_client}启动
+14:31:47 [D] 1 to_gate : Connect ok
+14:31:47 [I] 1 send C2G_login
+14:31:47 [I] 1 on_g2c_login_ret
+14:34:16 [D] 1           服务器{chat_client}启动
+14:34:16 [D] 1 to_gate : Connect ok
+14:34:16 [I] 1 send C2G_login
+14:34:16 [I] 1 on_g2c_login_ret
+14:34:21 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:54809->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:34:21 [D] 1 to_gate : Connect pre close
+14:34:21 [D] 1 to_gate : Connect close ok.
+14:46:45 [D] 1           服务器{chat_client}启动
+14:46:45 [D] 1 to_gate : Connect ok
+14:46:45 [I] 1 send C2G_login
+14:46:45 [I] 1 on_g2c_login_ret
+14:48:34 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:55386->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:48:34 [D] 1 to_gate : Connect pre close
+14:48:34 [D] 1 to_gate : Connect close ok.
+14:48:43 [D] 1           服务器{chat_client}启动
+14:48:44 [D] 1 to_gate : Connect ok
+14:48:44 [I] 1 send C2G_login
+14:48:44 [I] 1 on_g2c_login_ret
+14:49:42 [D] 1           服务器{chat_client}启动
+14:49:42 [D] 1 to_gate : Connect ok
+14:49:42 [I] 1 send C2G_login
+14:49:42 [I] 1 on_g2c_login_ret
+14:50:19 [D] 1           服务器{chat_client}启动
+14:50:19 [D] 1 to_gate : Connect ok
+14:50:19 [I] 1 send C2G_login
+14:50:19 [I] 1 on_g2c_login_ret
+14:53:27 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:55572->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+14:53:27 [D] 1 to_gate : Connect pre close
+14:53:27 [D] 1 to_gate : Connect close ok.
+14:53:36 [D] 1           服务器{chat_client}启动
+14:53:36 [D] 1 to_gate : Connect ok
+14:53:36 [I] 1 send C2G_login
+14:53:37 [I] 1 on_g2c_login_ret
+15:36:42 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:55720->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:36:42 [D] 1 to_gate : Connect pre close
+15:36:42 [D] 1 to_gate : Connect close ok.
+15:36:54 [D] 1           服务器{chat_client}启动
+15:36:54 [D] 1 to_gate : Connect ok
+15:36:54 [I] 1 send C2G_login
+15:36:55 [I] 1 on_g2c_login_ret
+15:36:55 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:57257->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:36:55 [D] 1 to_gate : Connect pre close
+15:36:55 [D] 1 to_gate : Connect close ok.
+15:40:31 [D] 1           服务器{chat_client}启动
+15:40:31 [D] 1 to_gate : Connect ok
+15:40:31 [I] 1 send C2G_login
+15:40:31 [I] 1 on_g2c_login_ret
+15:40:32 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:57397->127.0.0.1:9998: wsarecv: An existing connection was forcibly closed by the remote host.]
+15:40:32 [D] 1 to_gate : Connect pre close
+15:40:32 [D] 1 to_gate : Connect close ok.
+15:45:29 [D] 1           服务器{chat_client}启动
+15:45:29 [D] 1 to_gate : Connect ok
+15:45:29 [I] 1 send C2G_login
+15:45:29 [I] 1 on_g2c_login_ret
+15:45:29 [W] 1 Thread::procC2GNetPacket:消息没有对应处理函数:256
+15:45:29 [D] 1 to_gate : Connect pre close
+15:45:29 [D] 1 to_gate : Connect close ok.
+15:45:29 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:57783->127.0.0.1:9998: use of closed network connection]
+15:49:10 [D] 1           服务器{chat_client}启动
+15:49:10 [D] 1 to_gate : Connect ok
+15:49:10 [I] 1 send C2G_login
+15:49:10 [I] 1 on_g2c_login_ret
+15:49:10 [W] 1 Thread::procC2GNetPacket:消息没有对应处理函数:7
+15:49:10 [D] 1 to_gate : Connect pre close
+15:49:10 [D] 1 to_gate : Connect close ok.
+15:49:10 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:57986->127.0.0.1:9998: use of closed network connection]
+16:45:24 [D] 1           服务器{chat_client}启动
+16:45:24 [D] 1 to_gate : Connect ok
+16:45:24 [I] 1 send C2G_login
+16:45:24 [I] 1 on_g2c_login_ret
+16:45:25 [W] 1 Thread::procC2GNetPacket:消息没有对应处理函数:7
+16:45:25 [D] 1 to_gate : Connect pre close
+16:45:25 [D] 1 to_gate : Connect close ok.
+16:45:25 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:60130->127.0.0.1:9998: use of closed network connection]
+16:45:46 [D] 1           服务器{chat_client}启动
+16:45:46 [D] 1 to_gate : Connect ok
+16:45:46 [I] 1 send C2G_login
+16:45:46 [I] 1 on_g2c_login_ret
+16:45:46 [W] 1 Thread::procC2GNetPacket:消息没有对应处理函数:7
+16:45:46 [D] 1 to_gate : Connect pre close
+16:45:46 [D] 1 to_gate : Connect close ok.
+16:45:46 [E] 1 to_gate : Connect read[read tcp 127.0.0.1:60160->127.0.0.1:9998: use of closed network connection]
