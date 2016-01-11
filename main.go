@@ -91,7 +91,7 @@ func (this *MasterThread) On_packetError(sessionId uint64) {
 // 注册消息
 func (this *MasterThread) On_registNetMsg() {
 	this.RegistNetMsg(proto.G2C_login_ret_Id, this.on_g2c_login_ret)
-	this.RegistNetMsg(proto.S2C_chat, this.on_s2c_chat)
+	this.RegistNetMsg(proto.S2C_chat_Id, this.on_s2c_chat)
 }
 
 func (this *MasterThread) on_g2c_login_ret(pack *toogo.PacketReader, sessionId uint64) bool {
