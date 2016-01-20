@@ -48,7 +48,6 @@ func (t *TVec3) Read(p *PacketReader) bool {
 
 func (t *TVec3) Write(p *PacketWriter) bool {
 	defer RecoverWrite("TVec3")
-
 	p.WriteFloat32(t.X)
 	p.WriteFloat32(t.Y)
 	p.WriteFloat32(t.Z)
@@ -77,7 +76,6 @@ func (t *MonsterData) Read(p *PacketReader) bool {
 
 func (t *MonsterData) Write(p *PacketWriter) bool {
 	defer RecoverWrite("MonsterData")
-
 	p.WriteString(&t.Name)
 	t.CurrPos.Write(p)
 	t.TargetPos.Write(p)
@@ -106,7 +104,6 @@ func (t *C2G_login) Read(p *PacketReader) bool {
 
 func (t *C2G_login) Write(p *PacketWriter) bool {
 	defer RecoverWrite("C2G_login")
-
 	p.WriteMsgId(C2G_login_Id)
 	p.WriteString(&t.Account)
 	p.WriteInt32(t.Time)
@@ -133,7 +130,6 @@ func (t *G2C_login_ret) Read(p *PacketReader) bool {
 
 func (t *G2C_login_ret) Write(p *PacketWriter) bool {
 	defer RecoverWrite("G2C_login_ret")
-
 	p.WriteMsgId(G2C_login_ret_Id)
 	p.WriteInt8(t.Ret)
 	p.WriteString(&t.Msg)
@@ -159,7 +155,6 @@ func (t *C2G_createRole) Read(p *PacketReader) bool {
 
 func (t *C2G_createRole) Write(p *PacketWriter) bool {
 	defer RecoverWrite("C2G_createRole")
-
 	p.WriteMsgId(C2G_createRole_Id)
 	p.WriteString(&t.Name)
 	p.WriteInt8(t.Sex)
@@ -185,7 +180,6 @@ func (t *G2C_createRole_ret) Read(p *PacketReader) bool {
 
 func (t *G2C_createRole_ret) Write(p *PacketWriter) bool {
 	defer RecoverWrite("G2C_createRole_ret")
-
 	p.WriteMsgId(G2C_createRole_ret_Id)
 	p.WriteInt8(t.Ret)
 	p.WriteString(&t.Msg)
@@ -211,7 +205,6 @@ func (t *C2S_chat) Read(p *PacketReader) bool {
 
 func (t *C2S_chat) Write(p *PacketWriter) bool {
 	defer RecoverWrite("C2S_chat")
-
 	p.WriteMsgId(C2S_chat_Id)
 	p.WriteInt32(t.Channel)
 	p.WriteString(&t.Data)
@@ -237,7 +230,6 @@ func (t *C2C_chat_private) Read(p *PacketReader) bool {
 
 func (t *C2C_chat_private) Write(p *PacketWriter) bool {
 	defer RecoverWrite("C2C_chat_private")
-
 	p.WriteMsgId(C2C_chat_private_Id)
 	p.WriteString(&t.Target)
 	p.WriteString(&t.Data)
@@ -263,9 +255,9 @@ func (t *S2C_chat) Read(p *PacketReader) bool {
 	return true
 }
 
-func (t *S2C_chat) Write(p *PacketWriter) bool {
+func (t *S2C_chat) Write(p *PacketWriter, tgid uint64) bool {
 	defer RecoverWrite("S2C_chat")
-
+	p.SetsubTgid(tgid)
 	p.WriteMsgId(S2C_chat_Id)
 	p.WriteInt32(t.Channel)
 	p.WriteString(&t.Source)
@@ -292,9 +284,9 @@ func (t *S2C_chat_private) Read(p *PacketReader) bool {
 	return true
 }
 
-func (t *S2C_chat_private) Write(p *PacketWriter) bool {
+func (t *S2C_chat_private) Write(p *PacketWriter, tgid uint64) bool {
 	defer RecoverWrite("S2C_chat_private")
-
+	p.SetsubTgid(tgid)
 	p.WriteMsgId(S2C_chat_private_Id)
 	p.WriteString(&t.Source)
 	p.WriteString(&t.Target)
@@ -314,9 +306,9 @@ func (t *S2G_more_packet) Read(p *PacketReader) bool {
 	return true
 }
 
-func (t *S2G_more_packet) Write(p *PacketWriter) bool {
+func (t *S2G_more_packet) Write(p *PacketWriter, tgid uint64) bool {
 	defer RecoverWrite("S2G_more_packet")
-
+	p.SetsubTgid(tgid)
 	p.WriteMsgId(S2G_more_packet_Id)
 	p.WriteMsgOver()
 
@@ -333,9 +325,9 @@ func (t *G2S_more_packet) Read(p *PacketReader) bool {
 	return true
 }
 
-func (t *G2S_more_packet) Write(p *PacketWriter) bool {
+func (t *G2S_more_packet) Write(p *PacketWriter, tgid uint64) bool {
 	defer RecoverWrite("G2S_more_packet")
-
+	p.SetsubTgid(tgid)
 	p.WriteMsgId(G2S_more_packet_Id)
 	p.WriteMsgOver()
 
@@ -355,9 +347,9 @@ func (t *S2G_registe) Read(p *PacketReader) bool {
 	return true
 }
 
-func (t *S2G_registe) Write(p *PacketWriter) bool {
+func (t *S2G_registe) Write(p *PacketWriter, tgid uint64) bool {
 	defer RecoverWrite("S2G_registe")
-
+	p.SetsubTgid(tgid)
 	p.WriteMsgId(S2G_registe_Id)
 	p.WriteUint64(t.Sid)
 	p.WriteMsgOver()
@@ -380,9 +372,9 @@ func (t *G2S_registe) Read(p *PacketReader) bool {
 	return true
 }
 
-func (t *G2S_registe) Write(p *PacketWriter) bool {
+func (t *G2S_registe) Write(p *PacketWriter, tgid uint64) bool {
 	defer RecoverWrite("G2S_registe")
-
+	p.SetsubTgid(tgid)
 	p.WriteMsgId(G2S_registe_Id)
 	p.WriteUint8(t.Ret)
 	p.WriteString(&t.Msg)
@@ -404,9 +396,9 @@ func (t *S2C_monsterData) Read(p *PacketReader) bool {
 	return true
 }
 
-func (t *S2C_monsterData) Write(p *PacketWriter) bool {
+func (t *S2C_monsterData) Write(p *PacketWriter, tgid uint64) bool {
 	defer RecoverWrite("S2C_monsterData")
-
+	p.SetsubTgid(tgid)
 	p.WriteMsgId(S2C_monsterData_Id)
 	t.Data.Write(p)
 	p.WriteMsgOver()
